@@ -1,11 +1,8 @@
 const express = require("express")
 const app = express()
 
-// use the express-static middleware
-app.use(express.static("public"))
-
 // define the first route
-app.get("/", function (req, res) {
+app.get("/api", function (req, res) {
   res.send("<h1>Hello World!</h1>")
 })
 
