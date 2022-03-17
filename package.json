@@ -4,6 +4,7 @@
   "description": "Backend logic for travel app",
   "main": "index.js",
   "scripts": {
+    "start:heroku": "heroku local -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,11 @@
   },
   "homepage": "https://github.com/briannka/travel-app-api#readme",
   "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
+    "geonames.js": "^3.0.6",
+    "node-fetch": "2",
     "nodemon": "^2.0.15"
   }
 }
